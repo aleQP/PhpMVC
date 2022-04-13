@@ -1,0 +1,76 @@
+-- phpMyAdmin SQL Dump
+-- version 4.9.5
+-- https://www.phpmyadmin.net/
+--
+-- Servidor: localhost:3306
+-- Tiempo de generación: 12-04-2022 a las 20:57:23
+-- Versión del servidor: 10.5.12-MariaDB
+-- Versión de PHP: 7.3.32
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Base de datos: `id18753472_id17213405_eaqpotrosdb`
+--
+CREATE DATABASE IF NOT EXISTS `id18753472_id17213405_eaqpotrosdb` DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
+USE `id18753472_id17213405_eaqpotrosdb`;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `usuarios`
+--
+
+CREATE TABLE `usuarios` (
+  `id` int(255) NOT NULL,
+  `name` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `ap_father` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `ap_mother` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `birthday` date DEFAULT NULL,
+  `gender` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+  `domicile` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `email` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `number` int(12) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Volcado de datos para la tabla `usuarios`
+--
+
+INSERT INTO `usuarios` (`id`, `name`, `ap_father`, `ap_mother`, `birthday`, `gender`, `domicile`, `email`, `number`) VALUES
+(1, 'Francisco', 'Herrera', '1', '2022-04-06', 'M', 'Colonia El Castillo, Código Postal 91165, Xalapa-Enríquez, Veracruz\r\n', 'elcastillo@hotmail.com', 65),
+(2, 'Saturnino', 'Navarro', '1', '2021-12-06', 'F', 'Colonia 10 de Abril, Código Postal 91015, Xalapa-Enríquez, Veracruz\r\n', '10deabril@hotmail.com', 23);
+
+--
+-- Índices para tablas volcadas
+--
+
+--
+-- Indices de la tabla `usuarios`
+--
+ALTER TABLE `usuarios`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT de las tablas volcadas
+--
+
+--
+-- AUTO_INCREMENT de la tabla `usuarios`
+--
+ALTER TABLE `usuarios`
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
