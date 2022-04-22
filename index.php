@@ -27,6 +27,8 @@ if(isset($_GET['c'])){
 // http://hobbiespaeq.infinityfreeapp.com/ 9TnQY8581UZ3Be
 // https://www.juntadeandalucia.es/servicios/madeja/contenido/recurso/257
 // https://pabletoreto.blogspot.com/2015/04/php-pdo-singleton-crud.html
-// https://pabletoreto.blogspot.com/2015/04/ejemplo.html*/
+// https://pabletoreto.blogspot.com/2015/04/ejemplo.html
 
 ?>
+
+

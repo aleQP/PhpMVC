@@ -8,8 +8,8 @@
 	<title>En proceso...</title>
 </head>
 <body>
-	<h2><?php //echo $data["titulo"]; ?></h2>	
-	<a href="#">Crear nuevo</a>
+	<h2><?php echo $data["titulo"]; ?></h2>	
+	<a href="?c=user&a=create">Crear nuevo</a>
 	<table border="1px solid red">
 		<thead>
 			<tr>
@@ -22,20 +22,28 @@
 				<th>Domicilio</th>
 				<th>Correo</th>
 				<th>Num. Telefono</th>
+				<th>Editar</th>
+				<th>Eliminar</th>
 			</tr>
 		</thead>
 		<tbody>
-			<tr>
-				<th>hola</th>
-				<th>hola</th>
-				<th>hola</th>
-				<th>hola</th>
-				<th>hola</th>
-				<th>hola</th>
-				<th>hola</th>
-				<th>hola</th>
-				<th>hola</th>
-			</tr>
+			<?php  
+			foreach($data["usuarios"] as $dato){
+				echo "<tr>";
+				echo "<td>".$dato["id"]."</td>";
+				echo "<td>".$dato["name"]."</td>";
+				echo "<td>".$dato["ap_father"]."</td>";
+				echo "<td>".$dato["ap_mother"]."</td>";
+				echo "<td>".$dato["birthday"]."</td>";
+				echo "<td>".$dato["gender"]."</td>";
+				echo "<td>".$dato["domicile"]."</td>";
+				echo "<td>".$dato["email"]."</td>";
+				echo "<td>".$dato["number"]."</td>";
+				echo "<td><a href='?c=user&a=edit&id=".$dato["id"]."'>Editar</a></td>";
+				echo "<td><a href='?c=user&a=destroy&id=".$dato["id"]."'>Eliminar</a></td>";
+				echo "</tr>";
+			}
+			?>
 		</tbody>
 	</table>
 </body>

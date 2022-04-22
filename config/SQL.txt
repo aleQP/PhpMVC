@@ -39,7 +39,7 @@ CREATE TABLE `usuarios` (
   `gender` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
   `domicile` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `email` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `number` int(12) DEFAULT NULL
+  `number` varchar(12) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
@@ -47,8 +47,8 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`id`, `name`, `ap_father`, `ap_mother`, `birthday`, `gender`, `domicile`, `email`, `number`) VALUES
-(1, 'Francisco', 'Herrera', '1', '2022-04-06', 'M', 'Colonia El Castillo, Código Postal 91165, Xalapa-Enríquez, Veracruz\r\n', 'elcastillo@hotmail.com', 65),
-(2, 'Saturnino', 'Navarro', '1', '2021-12-06', 'F', 'Colonia 10 de Abril, Código Postal 91015, Xalapa-Enríquez, Veracruz\r\n', '10deabril@hotmail.com', 23);
+(1, 'Francisco', 'Herrera', 'Frdos', '2022-04-06', 'M', 'Colonia El Castillo, Código Postal 91165, Xalapa-Enríquez, Veracruz\r\n', 'elcastillo@hotmail.com', 728541394658),
+(2, 'Saturnino', 'Navarro', 'Cfewr', '2021-12-06', 'F', 'Colonia 10 de Abril, Código Postal 91015, Xalapa-Enríquez, Veracruz\r\n', '10deabril@hotmail.com', 522288693165);
 
 --
 -- Índices para tablas volcadas
