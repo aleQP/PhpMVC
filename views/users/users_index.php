@@ -38,7 +38,7 @@
 				echo "<td>".$dato["gender"]."</td>";
 				echo "<td>".$dato["domicile"]."</td>";
 				echo "<td>".$dato["email"]."</td>";
-				echo "<td>".$dato["number"]."</td>";
+				echo "<td>".$dato["phone"]."</td>";
 				echo "<td><a href='?c=user&a=edit&id=".$dato["id"]."'>Editar</a></td>";
 				echo "<td><a href='?c=user&a=destroy&id=".$dato["id"]."'>Eliminar</a></td>";
 				echo "</tr>";

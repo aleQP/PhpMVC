@@ -15,7 +15,7 @@
 		Genero: <input type="text" id="gender" name="gender"><br>
 		Domicilio: <input type="text" id="domicile" name="domicile"><br>
 		Correo electronico: <input type="text" id="email" name="email"><br>
-		Numero de telefono: <input type="text" id="number" name="number"><br>
+		Numero de telefono: <input type="text" id="phone" name="phone"><br>
 
 		<button id="save" name="save" type="submit">Save</button>
 	</form>

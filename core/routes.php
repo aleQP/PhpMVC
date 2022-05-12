@@ -14,9 +14,13 @@ function cargarControlador($controlador){
 	return $control;
 }
 
-function cargarAccion($controlador, $accion, $id=null){
+function cargarAccion($controlador, $accion, $id = null){
 	if(isset($accion) && method_exists($controlador, $accion)){	// method_exists(clase, metodo)
-		return $controlador->$accion();
+		if ($id == null) {
+			return $controlador->$accion();
+		}else{
+			return $controlador->$accion($id);
+		}
 	}else{
 		return $controlador->ACCION_PRINCIPAL();
 	}
