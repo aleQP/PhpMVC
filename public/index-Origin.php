@@ -2,10 +2,10 @@
 error_reporting(E_ALL);
 ini_set('display_errors', '1');
 
-require_once "config/config.php";
-require_once "config/db.php";
-require_once "controllers/UserController.php";
-require_once "core/routes.php";
+require_once "../app/config/config.php";
+require_once "../app/config/db.php";
+require_once "../app/controllers/UserController.php";
+require_once "../app/routes.php";
 
 if(isset($_GET['c'])){
 	$controlador = cargarControlador($_GET['c']);
